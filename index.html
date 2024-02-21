@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="navbar fixed top-0 w-full z-20">
+      <section class="frame dark-theme setting container">
+        <section class="flex justify-between p-6 px-4">
+          <section class="order-2 md:order-1 flex justify-between items-center">
+            <a href="" class=""
+              ><img
+                  class="mx-2 w-14 h-14 rounded-full"
+                  src="./images/S__149544963.jpg"
+                  alt=""
+              /></a>
+          </section>
+
+          <section class="flex items-center md:hidden">
+            <button
+              class=""
+              type="button"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              onclick="myFunction()"
+            >
+              <i class="fa-solid fa-bars-staggered"></i>
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </section>
+          <ul class="menu-content items-center order-3 md:order-3 hidden md:flex">
+            <li><a href="index.html" class="mx-2 hidden md:block">履歷</a></li>
+            <li><a href="portfolio.html" class="mx-2 hidden md:block">作品集</a></li>
+            <li>          
+              <div class=" items-center justify-between ml-4 hidden md:flex">
+                <i class="fa-solid fa-moon"></i>
+                  <button class="btn" onclick="slide()">
+                      <div class="ball"></div>
+                  </button>
+                <i class="fa-solid fa-sun"></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="hidden md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3">
+            <a
+              href="index.html"
+              class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >履歷</a
+            >
+
+            <a
+              href="portfolio.html"
+              class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >作品集</a
+            >
+
+            <a
+              href="#"
+              class=" flex justify-between items-center  hover:bg-gray-700 hover:text-white  rounded-md px-3 py-2 text-base font-medium"
+              onclick="slide()"><p class="flex items-center">切換模式</p>
+              <div class="flex items-center justify-center ml-4">
+                <i class="fa-solid fa-moon"></i>
+                  <button class="btn" >
+                      <div class="ball"></div>
+                  </button>
+                <i class="fa-solid fa-sun"></i>
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
+
+   <div class="container text-center  mx-auto z-10 mt-40 p-8 ">
+       <h1 class="text-3xl my-8 relative font-bold">履歷</h1>
+        <section class="text-center p-4">
+          <h2 class="text-center text-2xl my-10  py-4  dark mx-auto">簡介</h2>
+          <div class="md:flex md:justify-center">
+              <section class="md:w-[300px]">
+              <img src="./images/me.jpg" alt="" class="w-1/2 my-4 mx-auto "></section>
+              <section class=" text-lg flex flex-col items-center mt-8 md:mt-0 md:items-start md:justify-center">
+                <p >董政威 | 國立台東大學資訊工程學系 大學畢業</p>
+                <p class="mt-4  leading-[50px] md:text-left">高雄市三民區 </br> 4~5年工作經驗</br>  希望職稱：前端工程師</p>
+              </section>
+          </div>
+        </section>
+        <section class="md:text-left px-4">
+          <h2 class="text-center text-2xl my-10  py-4  dark mx-auto">學習歷程</h2>
+          <div class="md:flex md:justify-center my-8">
+              <ul >
+                <li class="md:list-disc">2022 年 6 ~ 9 月   參加職訓-多媒體網頁設計結業</li>
+                <li class="my-4 md:list-disc">2023 年 1 ~ 12 月 參加六角火箭隊工程師培訓營結業</li>
+                <li class="md:list-disc">2023 年 8 ~ 12 月 開發高雄市便民一路通專案(前端)，2024 / 1月上線，有接案經驗。</li>
+              </ul>
+          </div>
+        </section>
+        <section class="md:text-left  px-4">
+          <h2 class="text-center text-2xl my-10  py-4 dark mx-auto">技能專長</h2>
+          
+          <div class="md:flex md:justify-center  md:flex-col my-8 text-left md:px-6">
+            <h3 class="text-xl block border-b-2 border-white pb-2">前端技術</h3>
+              <ul class="mt-2">
+                <li class="md:list-disc">HTML / CSS</li>
+                <li class="md:list-disc">JavaScript / JQuery</li>
+                <li class="md:list-disc">Bootstrap / Tailwind</li>
+                <li class="md:list-disc">RWD</li>
+                <li class="md:list-disc">SCSS / SASS</li>
+                <li class="md:list-disc">Vue2 / Vue3</li>
+              </ul>
+          </div>
+          <div class="md:flex md:justify-center md:flex-col my-8 text-left md:px-6">
+            <h3 class="text-xl block border-b-2 border-white pb-2">版本控制</h3>
+           <ul class="mt-2">
+                <li class="md:list-disc">Git / GitHub</li>
+                <li class="md:list-disc">Source Tree</li>
+              </ul>
+          </div>
+        </section>
+    </div>
+    <script>
+
+      // navbar 收合
+      function myFunction() {
+        var element = document.getElementById("mobile-menu");
+        element.classList.toggle("hidden");
+        
+        $('.fa-bars-staggered, .fa-bars').toggleClass('on');
+      }
+
+      
+      // drak mode切換
+      function slide() {
+        $('button.btn, .setting, .navbar, body, h1, .dark').toggleClass('on');
+      }
+    </script>
+</body>
+</html>

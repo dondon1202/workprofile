@@ -1,0 +1,112 @@
+
+.container{
+    padding: 0px 15px;
+}
+.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+}
+.setting{
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+}
+.fa-solid.fa-bars-staggered{
+    display: none;
+}
+.fa-solid.fa-bars-staggered.on{
+    display: block;
+}
+
+.fa-bars{
+    display: block;
+}
+.fa-bars.on{
+    display: none;
+}
+body {
+    background: #000000e7;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+body.on{
+    background-color: #E0E1D1;
+    color: black;
+    
+}
+.btn {
+    width: 6rem;
+    height: 2.5rem;
+    margin:.1rem;
+    padding: .1rem;
+    background: #000000;
+    border: 2px solid #ccc;
+    border-radius: 2rem;
+    transition: .3s;
+    box-shadow: inset 1px 1px 5px #333, .1rem .2rem .5rem #999;
+    transform: scale(0.4);
+    margin: 0px -15px
+}
+.ball {
+    width: 2rem;
+    height: 2rem;
+    background: #777;
+    border: inset .1rem rgba(153, 153, 153, 0.43);
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 1px 1px 5px #000;
+}
+.on.btn {
+    background: blue;
+}
+.on .ball {
+    background: white;
+    /* outset: .1rem rgba(153, 153, 153, 0.43); */
+    box-shadow: -1px 1px 5px #000;
+    margin-left: calc(100% - 2rem);
+}
+.setting.on{
+    background-color: #F2E8CD;
+    color: #000000;
+}
+.dark{
+    box-shadow: 0 10px 15px -3px #50d71e;
+}
+.dark.on{
+    box-shadow: 0 10px 15px -3px #919c8d;
+}
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    width: 50px; /* 調整線條的寬度 */
+    height: 1px; /* 調整線條的高度 */
+    background-color: white; /* 調整線條的顏色 */
+    top: 50%; /* 讓線條置於文字中間 */
+    transform: translateY(-50%);
+}
+h1.on::before,
+h1.on::after {
+    content: '';
+    position: absolute;
+    width: 50px; /* 調整線條的寬度 */
+    height: 1px; /* 調整線條的高度 */
+    background-color: black; /* 調整線條的顏色 */
+    top: 50%; /* 讓線條置於文字中間 */
+    transform: translateY(-50%);
+}
+
+h1::before {
+    right: 16px;
+}
+
+h1::after {
+    left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        padding: 0px 200px;
+    }
+}

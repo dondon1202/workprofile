@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <section class="navbar fixed top-0 w-full z-20">
+      <section class="frame dark-theme setting container">
+        <section class="flex justify-between p-6 px-4">
+          <section class="order-2 md:order-1 flex justify-between items-center">
+            <a href="" class=""
+              ><img
+                  class="mx-2 w-14 h-14 rounded-full"
+                  src="./images/S__149544963.jpg"
+                  alt=""
+              /></a>
+          </section>
+
+          <section class="flex items-center md:hidden">
+            <button
+              class=""
+              type="button"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              onclick="myFunction()"
+            >
+              <i class="fa-solid fa-bars-staggered"></i>
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </section>
+          <ul class="menu-content items-center order-3 md:order-3 hidden md:flex">
+            <li><a href="index.html" class="mx-2 hidden md:block">履歷</a></li>
+            <li><a href="portfolio.html" class="mx-2 hidden md:block">作品集</a></li>
+            <li>          
+              <div class=" items-center justify-between ml-4 hidden md:flex">
+                <i class="fa-solid fa-moon"></i>
+                  <button class="btn" onclick="slide()">
+                      <div class="ball"></div>
+                  </button>
+                <i class="fa-solid fa-sun"></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="hidden md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3">
+            <a
+              href="index.html"
+              class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >履歷</a
+            >
+
+            <a
+              href="portfolio.html"
+              class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >作品集</a
+            >
+
+            <a
+              href="#"
+              class=" flex justify-between items-center  hover:bg-gray-700 hover:text-white  rounded-md px-3 py-2 text-base font-medium"
+              onclick="slide()"><p class="flex items-center">切換模式</p>
+              <div class="flex items-center justify-center ml-4">
+                <i class="fa-solid fa-moon"></i>
+                  <button class="btn" >
+                      <div class="ball"></div>
+                  </button>
+                <i class="fa-solid fa-sun"></i>
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="container text-center  mx-auto z-10 mt-40 p-8">
+      <h1 class="text-3xl my-8 relative font-bold">作品集</h1>
+        <section class="text-center p-4">
+          <h2 class="text-center text-2xl my-10  py-4  dark ">切版作品</h2>
+          <p class="text-left text-lg">使用技術 : HTML、CSS
+              </br>樣式框架 : bootstrap4
+              </br> 動畫效果 : aos、animate
+              </br>響應式設計 : <i class="ml-1 fa-regular fa-square-check"></i>
+          </p>
+
+   
+
+        </section>
+   
+    </div>
+
+
+       <section class="container mb-6 ">
+            <div class="mb-3 md:mb-6 flex items-center justify-between px-4">
+              <div class="flex items-center gap-2">
+                <div class="h-[0.5px] w-[150px] bg-primary"></div></div></div>
+                <ul class="mb-3 grid-cols-12 gap-4 md:grid">
+                  <li class="mb-3 flex h-auto grow flex-col p-4 md:col-span-6 lg:col-span-3">
+                    <div class="flex w-full justify-between"><div class="flex  flex-col items-start">
+                      <div class="mb-1 flex"><h3 class="font-serif-tc font-semibold text-primary">自主學習</h3>
+                      </div>
+                      <p class="mb-3 font-serif-tc text-sm font-light text-[#828282] sm:text-primary-dark">2018 / 06</p>
+                    </div>
+                  </div>
+                  <a href="https://dondon1202.github.io/2018-0911/" target="_blank" class="">
+                    <div class="flex  h-[350px] flex-col">
+                      <div class="mb-3 h-[267px] max-w-full overflow-hidden">
+                        <img src="images/Image1.png" alt="article-cover" class="h-full w-full object-cover duration-500 hover:scale-105">
+                      </div>
+                      <h4 class="mb-3 font-serif-tc text-xl font-bold text-primary">商品行銷</h4>
+                      <p class="flex-grow font-light text-primary-dark">快來訂閱我們的方案</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-3 flex h-auto grow flex-col p-4 md:col-span-6 lg:col-span-3">
+                  <div class="flex w-full justify-between">
+                    <div class="flex  flex-col items-start">
+                      <div class="mb-1 flex">
+                        <h3 class="font-serif-tc font-semibold text-primary">自主學習</h3>
+                      </div>
+                      <p class="mb-3 font-serif-tc text-sm font-light text-[#828282] sm:text-primary-dark">2018 / 08</p>
+                    </div>
+                  </div>
+                  <a href="https://dondon1202.github.io/database-layout/" target="_blank" class="">
+                    <div class="flex  h-[350px] flex-col">
+                      <div class="mb-3 h-[267px] max-w-full overflow-hidden">
+                        <img src="images/Image3.png" alt="article-cover" class="h-full w-full object-cover duration-500 hover:scale-105">
+                      </div>
+                      <h4 class="mb-3 font-serif-tc text-xl font-bold text-primary">資料庫系統後臺</h4>
+                        <p class="flex-grow font-light text-primary-dark">帶給人們專業印象</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="mb-3 flex h-auto grow flex-col p-4 md:col-span-6 lg:col-span-3">
+                    <div class="flex w-full justify-between">
+                      <div class="flex  flex-col items-start">
+                        <div class="mb-1 flex">
+                        <h3 class="font-serif-tc font-semibold text-primary">自主學習</h3>
+                      </div><p class="mb-3 font-serif-tc text-sm font-light text-[#828282] sm:text-primary-dark">2018 / 09</p>
+                    </div>
+                  </div>
+                  <a href="https://dondon1202.github.io/2018-06-06/" target="_blank" class="">
+                    <div class="flex  h-[350px] flex-col">
+                      <div class="mb-3 h-[267px] max-w-full overflow-hidden">
+                        <img src="images/Image4.png" alt="article-cover" class="h-full w-full object-cover duration-500 hover:scale-105">
+                      </div>
+                      <h4 class="mb-3 font-serif-tc text-xl font-bold text-primary">個人網站</h4>
+                      <p class="flex-grow font-light text-primary-dark">打造個人品味與風格</p>
+                    </div></a></li><li class="mb-3 flex h-auto grow flex-col p-4 md:col-span-6 lg:col-span-3">
+                      <div class="flex w-full justify-between"><div class="flex  flex-col items-start"><div class="mb-1 flex">
+                        <h3 class="font-serif-tc font-semibold text-primary">職訓專題</h3>
+                      </div><p class="mb-3 font-serif-tc text-sm font-light text-[#828282] sm:text-primary-dark">2022 / 09</p>
+                    </div>
+                  </div>
+                  <a href="https://dondon1202.github.io/Fy_Venus/assets/html/index.html" target="_blank" class="">
+                    <div class="flex  h-[350px] flex-col">
+                    <div class="mb-3 h-[267px] max-w-full overflow-hidden">
+                        <img src="images/Image5.png" alt="article-cover" class="h-full w-full object-cover duration-500 hover:scale-105"></div>
+                        <h4 class="mb-3 font-serif-tc text-xl font-bold text-primary">品牌官網</h4>
+                        <p class="flex-grow font-light text-primary-dark">提升品牌知名度</p>
+                      </div></a>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+        </section>
+
+
+          <div class="container text-center  mx-auto  z-10 p-8 ">
+          <section class="text-center p-4">
+            <h2 class="text-center text-2xl my-10  py-4  dark ">六角學院 - 火箭隊培訓營</h2>
+            <p class="text-left text-lg">            
+              使用技術 : HTML5、CSS3、JavaScript、JQuery
+                </br>樣式框架 : bootstrap5、TailwindCss
+                </br> 框架 : Vue3、Nuxt3
+                </br>動畫效果 : aos、animate
+                </br>響應式設計 : <i class="ml-1 fa-regular fa-square-check"></i>
+            </p>
+          </section>
+          <section class="">
+            <div class="mb-3 md:mb-6 flex items-center justify-between px-4">
+              <div class="flex items-center gap-2">
+
+                <div class="h-[0.5px] w-[150px] bg-primary"></div></div></div>
+                <ul class="mb-3 grid-cols-12 gap-4 md:grid">
+                  <li class="mb-3 flex h-auto grow flex-col p-4 md:col-span-6 lg:col-span-4">
+                    <div class="flex w-full justify-between"><div class="flex  flex-col items-start">
+                      <div class="mb-1 flex"><h3 class="font-serif-tc font-semibold text-primary">培訓作品</h3>
+                      </div>
+                      <p class="mb-3 font-serif-tc text-sm font-light text-[#828282] sm:text-primary-dark">2023 / 04</p>
+                    </div>
+                  </div>
+                  <a href="https://dondon1202.github.io/todo_composition/" target="_blank" class="text-left">
+                    <div class="flex h-[350px] flex-col">
+                      <div class="mb-3 h-[267px] max-w-full overflow-hidden">
+                        <img src="images/Image6.png" alt="article-cover" class="h-full w-full object-cover duration-500 hover:scale-105">
+                      </div>
+                      <h4 class="mb-3 font-serif-tc text-xl font-bold text-primary">TODOLIST 代辦清單</h4>
+                      <p class="flex-grow font-light text-primary-dark">單人製作</p>
+                    </div>
+                  </a>
+                  </li>
+                  <li class="mb-3 flex h-auto grow flex-col p-4 md:col-span-6 lg:col-span-4">
+                    <div class="flex w-full justify-between"><div class="flex  flex-col items-start">
+                      <div class="mb-1 flex"><h3 class="font-serif-tc font-semibold text-primary">培訓作品</h3>
+                      </div>
+                      <p class="mb-3 font-serif-tc text-sm font-light text-[#828282] sm:text-primary-dark">2023 / 05</p>
+                    </div>
+                  </div>
+                  <a href="https://teamrocket12th.github.io/House-Hotel-Trio/#/" target="_blank" class="text-left">
+                    <div class="flex h-[350px] flex-col">
+                      <div class="mb-3 h-[267px] max-w-full overflow-hidden">
+                        <img src="images/Image7.png" alt="article-cover" class="h-full w-full object-cover duration-500 hover:scale-105">
+                      </div>
+                      <h4 class="mb-3 font-serif-tc text-xl font-bold text-primary">旅館訂房網</h4>
+                      <p class="flex-grow font-light text-primary-dark">3位前端合作</p>
+                    </div>
+                  </a>
+                  </li>
+                              <li class="mb-3 flex h-auto grow flex-col p-4 md:col-span-6 lg:col-span-4">
+                    <div class="flex w-full justify-between"><div class="flex  flex-col items-start">
+                      <div class="mb-1 flex"><h3 class="font-serif-tc font-semibold text-primary">專題製作</h3>
+                      </div>
+                      <p class="mb-3 font-serif-tc text-sm font-light text-[#828282] sm:text-primary-dark">2023 / 05 - 2023 / 07</p>
+                    </div>
+                  </div>
+                  <a href="https://island-of-healing.vercel.app/" target="_blank" class="text-left">
+                    <div class="flex h-[350px] flex-col">
+                      <div class="mb-3 h-[267px] max-w-full overflow-hidden">
+                        <img src="images/Image8.png" alt="article-cover" class="h-full w-full object-cover duration-500 hover:scale-105">
+                      </div>
+                      <h4 class="mb-3 font-serif-tc text-xl font-bold text-primary">小島療癒所</h4>
+                      <p class="flex-grow font-light text-primary-dark">UI/UX: 1位 / 前端: 3位 / 後端: 1位</p>
+                    </div>
+                  </a>
+                  </li>
+        </section>
+          </div>
+
+
+                    <div class="container text-center  mx-auto  z-10 p-8 ">
+          <section class="text-center p-4">
+            <h2 class="text-center text-2xl my-10  py-4  dark ">專案成就</h2>
+          </section>
+          <section class="">
+            <div class="mb-3 md:mb-6 flex items-center justify-between px-4">
+              <div class="flex items-center gap-2">
+
+                <div class="h-[0.5px] w-[150px] bg-primary"></div></div></div>
+                <ul class="mb-3 grid-cols-12 gap-4 md:grid">
+                  <li class="mb-3 flex h-auto grow flex-col p-4 md:col-span-6 lg:col-span-4">
+                    <div class="flex w-full justify-between">
+                      <div class="flex  flex-col items-start">
+                        <div class="mb-1 flex">
+                          <h3 class="font-serif-tc font-semibold text-primary">瘋帽客科技股份有限公司</h3>
+                        </div>
+                        <p class="mb-3 font-serif-tc text-sm font-light text-[#828282] sm:text-primary-dark">2023 / 08 -  2023 / 12</p>
+                    </div>
+                  </div>
+                  <a href="https://kgo.kcg.gov.tw/" target="_blank" class="text-left">
+                    <div class="flex h-[350px] flex-col">
+                      <div class="mb-3 h-[267px] max-w-full overflow-hidden">
+                        <img src="images/Image9.png" alt="article-cover" class="h-full w-full object-cover duration-500 hover:scale-105">
+                      </div>
+                      <h4 class="mb-3 font-serif-tc text-xl font-bold text-primary">高雄市便民一路通</h4>
+                      <p class="flex-grow font-light text-primary-dark">工作內容 : API串接</p>
+                    </div>
+                  </a>
+                  </li>
+                 
+        </section>
+          </div>
+
+    <script>
+      // navbar 收合
+      function myFunction() {
+        var element = document.getElementById("mobile-menu");
+        element.classList.toggle("hidden");
+        
+        $('.fa-bars-staggered, .fa-bars').toggleClass('on');
+      }
+
+      
+      // drak mode切換
+      function slide() {
+        $('button.btn, .setting, .navbar, body, h1, .dark').toggleClass('on');
+      }
+
+
+
+         
+    </script>
+</body>
+</html>
