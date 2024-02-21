@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集</title>
   <link href="./src/output.css" rel="stylesheet">
   <link rel="stylesheet" href="./src/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -41,7 +42,7 @@
             <li>          
               <div class=" items-center justify-between ml-4 hidden md:flex">
                 <i class="fa-solid fa-moon"></i>
-                  <button class="btn" onclick="slide()">
+                  <button class="btn" onclick="switchMode()">
                       <div class="ball"></div>
                   </button>
                 <i class="fa-solid fa-sun"></i>
@@ -66,7 +67,7 @@
             <a
               href="#"
               class=" flex justify-between items-center  hover:bg-gray-700 hover:text-white  rounded-md px-3 py-2 text-base font-medium"
-              onclick="slide()"><p class="flex items-center">切換模式</p>
+              onclick="switchMode()"><p class="flex items-center">切換模式</p>
               <div class="flex items-center justify-center ml-4">
                 <i class="fa-solid fa-moon"></i>
                   <button class="btn" >
@@ -289,7 +290,7 @@
 
       
       // drak mode切換
-      function slide() {
+      function switchMode() {
         $('button.btn, .setting, .navbar, body, h1, .dark').toggleClass('on');
       }
 
