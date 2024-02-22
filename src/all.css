@@ -1,5 +1,5 @@
 
-.container{
+.container-fluid{
     padding: 0px 15px;
 }
 .dark-theme {
@@ -106,7 +106,7 @@ h1::after {
 }
 
 @media screen and (min-width: 768px) {
-    .container{
+    .container-fluid{
         padding: 0px 200px;
     }
 }
